@@ -31,8 +31,13 @@
     <h1 title="h1">Hi, this is my stuff.</h1>
     </head>
     <body>
+        <script>
+            function hello() {
+                document.getElementByID('test').innerText = hello
+            }
+        </script>
         <a href="/DJLaciBacsi">This is a link to my another website.</a>
-        <button id="test" class="btn" type="button" onclick="document.getElementByID('test').innerText('hello')">Click me!</button>
+        <button id="test" class="btn" type="button" onclick="hello()">Click me!</button>
         <p>"nothing"<br> in red</p>
     </body>
 </html>
