@@ -16,6 +16,7 @@
         .btn {
             background-color: #ff0000;
             color: #00ff00;
+            font-size: 50px;
         }
         body {
             background-color: #000000;
@@ -31,14 +32,27 @@
     </head>
     <body>
         <h1 title="h1">Hi, this is my stuff.</h1>
+        <article>
+            <hr>
+            <a href="/DJLaciBacsi">This is a link to my another website.</a>
+            <p>"nothing"<br> in red</p>
+        </article>
+        <aside><button id="test" class="btn" type="button" onclick="change()">OFF</button></aside>
         <script>
-            function hello() {
-                document.getElementById("test").innerHTML = "hello";
+            let x = -1;
+            function change() {
+                x = x * -1;
+                if (x == -1) {
+                    document.getElementById("test").innerHTML = "OFF";
+                    document.getElementById("test").style.backgroundColor = "#ff0000";
+                    document.getElementById("test").style.color = "#00ff00";
+                }
+                else {
+                    document.getElementById("test").innerHTML = "ON&nbsp";
+                    document.getElementById("test").style.backgroundColor = "#00ff00";
+                    document.getElementById("test").style.color = "#ff0000";
+                }
             }
         </script>
-        <a href="/DJLaciBacsi">This is a link to my another website.</a>
-        <button id="test" class="btn" type="button" onclick="hello()">Click me!</button>
-        <hr>
-        <p>"nothing"<br> in red</p>
     </body>
 </html>
