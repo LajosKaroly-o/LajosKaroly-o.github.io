@@ -37,7 +37,7 @@
             <a href="/DJLaciBacsi">This is a link to my another website.</a>
             <p>"nothing"<br> in red</p>
         </article>
-        <aside><button id="test" class="btn" type="button" onclick="change()">OFF</button></aside>
+        <button id="test" class="btn" type="button" onclick="change()">OFF</button>
         <script>
             let x = -1;
             function change() {
@@ -52,6 +52,9 @@
                     document.getElementById("test").style.backgroundColor = "#00ff00";
                     document.getElementById("test").style.color = "#ff0000";
                 }
+            }
+            function panic() {
+                document.body.remove();
             }
         </script>
     </body>
